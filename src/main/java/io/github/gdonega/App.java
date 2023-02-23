@@ -1,6 +1,7 @@
 package io.github.gdonega;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.Set;
 
 public class App
@@ -55,10 +56,9 @@ public class App
 
         // Offset Time - Format: Tminute:secound:milisecond+timezon
         // Zoned Date Time - Format: 12:52:34+09:00
-        OffsetTime offsetTimeFromString = OffsetTime.parse("12:52:34+09:00");
+        OffsetTime offsetTimeFromString1 = OffsetTime.parse("12:52:34+09:00");
         // Convert to UTC
-        OffsetTime offsetTimeFromStringInUTC = offsetTimeFromString.withOffsetSameInstant(ZoneOffset.UTC);
-
+        OffsetTime offsetTimeFromString1InUTC = offsetTimeFromString1.withOffsetSameInstant(ZoneOffset.UTC);
 
 
         // ---------------------------------------------------------------------------> OffsetDateTime
